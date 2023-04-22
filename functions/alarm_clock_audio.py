@@ -12,8 +12,8 @@ class Song:
     def randomizeSong(self):
         path = os.getcwd()
         path = os.path.dirname(path)
-        song_files_path = path + "\\" + "Song_WAV_Files"
-        random_song_path = song_files_path + "\\" + random.choice(os.listdir(song_files_path))
+        song_files_path = path + "/" + "Song_WAV_Files"
+        random_song_path = song_files_path + "/" + random.choice(os.listdir(song_files_path))
         self.path = random_song_path
 
     # Starts playing a random song from the path asynchronously
