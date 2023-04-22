@@ -23,7 +23,7 @@ PURPLE = [B*255/255,0,B*255/255]
 WHITE = [B*255/255,B*255/255,B*255/255]
 
 
-pixels = neopixel.Neopixel(board.D18,LED_COUNT)
+pixels = neopixel.NeoPixel(board.D18,LED_COUNT)
 
 
 
