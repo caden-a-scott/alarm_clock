@@ -19,9 +19,13 @@ class Song:
     # Starts playing a random song from the path asynchronously
     def startRandomSong(self):
         self.randomizeSong()
-        mixer.init()
+        mixer.init(devicename='AmazonBasics05')
         mixer.music.load(self.path)
         mixer.music.set_volume(0.7)
         mixer.music.play()
+
+test = Song()
+test.startRandomSong()
+sleep(10)
 
 
